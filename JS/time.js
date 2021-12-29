@@ -9,7 +9,12 @@ function updateClock() {
     var minutes = Math.floor(delta / 60) % 60;
     delta -= minutes * 60;
     var seconds = delta % 60;
-    document.getElementById("hoursleftinday").innerHTML = `${days} days,  ${hours} hours, ${minutes} minutes, ${seconds} seconds left in today`;
+    if(days!=0){
+        document.getElementById("hoursleftinday").innerHTML = `${days} days,  ${hours} hours, ${minutes} minutes, ${seconds} seconds left in today`;
+    }
+    else{
+        document.getElementById("hoursleftinday").innerHTML = `${hours} hours, ${seconds} seconds left in today`;
+    }
     setTimeout(updateClock, 1000);
 }
 updateClock();

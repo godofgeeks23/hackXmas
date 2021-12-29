@@ -1,7 +1,7 @@
 
-# To-Do-List
+# Productivity++
 
-## A Simple To - Do Website!
+## A Simple, Intuitive To - Do Website!
 
 # To Do List
 
