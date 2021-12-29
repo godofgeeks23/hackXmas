@@ -37,7 +37,7 @@
 
 # *Author*
 
-* Team Debuggger
-  Aviral Srivastava (godofgeeks23, aviralji4@gmail.com)
-  Prerna Choudhary
+* Team Debuggger - <br>
+  Aviral Srivastava (godofgeeks23, aviralji4@gmail.com) <br>
+  Prerna Choudhary <br>
   Kartik Mehta
