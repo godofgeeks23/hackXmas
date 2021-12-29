@@ -16,26 +16,27 @@
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/corner.css">
-    <title>JUST DO IT</title>
+    <title>Productivity++</title>
     <script src="https://cdn.jsdelivr.net/npm/typed.js@2.0.12"></script>
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    <script src="//cdnjs.cloudflare.com/ajax/libs/moment.js/2.8.4/moment.min.js"></script>
 </head>
 
 <body>
     <div id="header">
         <h1>
-            <span class="text-slider-items">
-                <!-- typing text will be displayed here -->
-            </span>
+            <span class="text-slider-items"></span>
             <strong class="text-slider1"></strong><br>
         </h1>
     </div>
-
-
+    <div>
+        <p><span id="datetime"></span></p>
+        <script src="JS/time.js"></script>
+    </div>
     <div id="form">
         <form>
             <input class="todo-input" type="text" placeholder="Add a task">
-            <input class="todo-input1" type="text" placeholder="Priority (Starting with 1 - highest priority...)">
+            <input class="todo-input1" type="text" placeholder="Priority (Starting with 0 - highest priority...)">
             <input class="todo-input2" type="text" placeholder="Deadline (in Hours)">
             <input class="todo-input3" type="text" placeholder="Time Length (in Hours)">
             <button class="todo-btn" type="submit">I Got This!</button>
@@ -44,7 +45,7 @@
 
     <!-- div for top left corner -->
     <div class="version">
-        <div class="demo version-section"><a href="https://github.com/tusharnankani/ToDoList" class="github-corner">
+        <div class="demo version-section"><a href="https://github.com/godofgeeks23/hackXmas" class="github-corner">
                 <svg width="80" height="80" viewBox="0 0 250 250"
                     style="fill:#151513; color:#fff; position: absolute; top: 0; border: 0; left: 0; transform: scale(-1, 1);">
                     <path d="M0,0 L115,115 L130,115 L142,142 L250,250 L250,0 Z"></path>
@@ -57,10 +58,16 @@
                 </svg></a>
         </div>
     </div>
+
     <div>
-        <p><span id="datetime"></span></p>
+        <p>Complete the tasks in the order in which they are being displayed.</p>
+    </div>
+    <div>
+        <p><span id="hoursleftinday"></span></p>
+        <!-- <p><span id="hoursleftinday"></span></p> -->
         <script src="JS/time.js"></script>
     </div>
+
 
     <div id="myUnOrdList">
         <ul class="todo-list">

@@ -96,6 +96,27 @@ function savelocal(todo, priority, deadline, time_length) {
                 time_lengths[j] = time_lengths[j + 1]
                 time_lengths[j+1] = temp4
           }
+          else if(parseInt(priorities[j]) == parseInt(priorities[j+1]))
+          {
+                if(parseInt(deadlines[j]) > parseInt(deadlines[j+1]))
+                {
+                    var temp1 = todos[j]
+                    todos[j] = todos[j + 1]
+                    todos[j+1] = temp1
+    
+                    var temp2 = priorities[j]
+                    priorities[j] = priorities[j + 1]
+                    priorities[j+1] = temp2
+    
+                    var temp3 = deadlines[j]
+                    deadlines[j] = deadlines[j + 1]
+                    deadlines[j+1] = temp3
+    
+                    var temp4 = time_lengths[j]
+                    time_lengths[j] = time_lengths[j + 1]
+                    time_lengths[j+1] = temp4
+                }
+          }
         }
       }
     localStorage.clear();
