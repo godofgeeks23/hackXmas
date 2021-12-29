@@ -13,6 +13,8 @@
     <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.12.0-2/css/all.min.css"
         integrity="sha256-46r060N2LrChLLb5zowXQ72/iKKNiw/lAmygmHExk/o=" crossorigin="anonymous" />
 
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css" />
+
     <link rel="shortcut icon" type="image/png" href="assets/favicon.png" />
     <link rel="stylesheet" href="CSS/main.css">
     <link rel="stylesheet" href="CSS/corner.css">
@@ -29,7 +31,7 @@
             <strong class="text-slider1"></strong><br>
         </h1>
     </div>
-    <div>
+    <div class="animate__animated animate__slideInDown">
         <p><span id="datetime"></span></p>
         <script src="JS/time.js"></script>
     </div>
@@ -60,11 +62,10 @@
     </div>
 
     <div>
-        <p>Complete the tasks in the order in which they are being displayed.</p>
+        <p class="animate__animated animate__slideInDown">Complete the tasks in the order in which they are being displayed.</p>
     </div>
     <div>
-        <p><span id="hoursleftinday"></span></p>
-        <!-- <p><span id="hoursleftinday"></span></p> -->
+        <p class="animate__animated animate__slideInUp"><span id="hoursleftinday"></span></p>
         <script src="JS/time.js"></script>
     </div>
 
